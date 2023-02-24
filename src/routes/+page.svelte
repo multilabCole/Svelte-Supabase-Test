@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	export let data: PageData;
-	const { posts } = data;
+	$: ({ posts } = data);
 </script>
 
 <div class="max-w-2xl mx-auto mt-4">
